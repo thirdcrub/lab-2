@@ -2,7 +2,9 @@
     src: url(/lab-2/SanamDeklen_chaya/SanamDeklen_chaya.ttf);
     font-family: dee ;
 }
-
+body{
+    background-image: url(/lab-2/pic/111.jpg);
+}
 h1 {
     font-size: 10mm;
     font-family: "dee";
