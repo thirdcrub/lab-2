@@ -1,25 +1,58 @@
-<h2>JavaScript Can Validate Input</h2>
 
-<p>Please input a number between 1 and 10:</p>
+let L=0;
+var randomNumber1 = Math.floor(Math.random() * 10) + 1;
+console.log(randomNumber1);
 
-<input id="numb">
 
-<button type="button" onclick="myFunction()">Submit</button>
 
-<p id="demo"></p>
+function Mygame(a){
+    let show;
+    let num = document.getElementById("num").value;
 
-<script>
-function myFunction() {
-  var x, text;
+    if(a==0){
+        if(L>=0 && L<3){
+            if(num<1||num>10){
+                show="please Enter New Number";
+                document.getElementById("show1").innerHTML = show;
+            }
+            else {
+                if(num<randomNumber1){
+                    show="Low";
+                    L++;
+                    document.getElementById("show1").innerHTML = show;
+                    document.getElementById("Previous").innerHTML = "Previous guesses : " + num;
+                }
+                else if(num>randomNumber1){ 
+                    show="High";
+                    L++;
+                    document.getElementById("show1").innerHTML = show;
+                    document.getElementById("Previous").innerHTML = "Previous guesses : " + num;
+                }
+                else if(num==randomNumber1){
+                    show="Your Win!!!";
+                    document.getElementById("show1").innerHTML = "";
+                    document.getElementById("show2").innerHTML = show;
+                }
+                
+                document.getElementById("Previous").innerHTML = "Previous guesses : " + num;
+                
+                document.getElementById("life").innerHTML ="You have life : " + (3-L);
+            }
+        }
+        if(L==3){
+            show="Game Over";
+            document.getElementById("show1").innerHTML = show;
+            
 
-  // Get the value of the input field with id="numb"
-  x = document.getElementById("numb").value;
+        }
+    }
+    // else if(){
 
-  // If x is Not a Number or less than one or greater than 10
-  if (isNaN(x) || x < 1 || x > 10) {
-    text = "Input not valid";
-  } else {
-    text = "Input OK";
-  }
-  document.getElementById("demo").innerHTML = text;
+    // }
+
+    else{
+        document.getElementById("num").disabled = true;
+        document.getElementById("sub").disabled = true;
+    }
+
 }

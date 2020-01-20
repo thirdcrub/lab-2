@@ -206,7 +206,7 @@
         </li>
         <li>
             <a href="game.html">
-              <i class="fa fa-gamepad"></i> <span>My Game</span>
+              <i class="fa fa-gamepad"></i> <span>My GAME</span>
               <span class="pull-right-container">
   
               </span>
@@ -218,10 +218,33 @@
 
   <div class="content-wrapper" style="background-image: url(pic/111.jpg);">
 
+    <table></table>
                 <h4 align ="center">วิธีการเล่นเกมส์</h4>
                 
-                
+                <div class="w3-example">
+                <table width='80%'  align="center">   
+                    <h5 align ="center">Please input a number between 1 and 10</h5>
+                    <div class="profile-username text-center">
+                        <h6 id="life">You have life : 3</h6>
+                    </div>
+                    <div class="profile-username text-center">
+                    <input id="num" onfocus="this.value=''">
+                    </div>
+                    <div class="profile-username text-center">
+                        <h5 id="Previous">Previous guesses :</h5> 
+                    </div>
+                    <div class="profile-username text-center">
+                    <button class="profile-username text-center" id="sub" onclick="Mygame(0)">Submit</button>
+                    <button class="profile-username text-center" ><a href="javascript:location.reload(true)">restart</a></button>
+                    </div>
+                    <div class="profile-username text-center">
+                    <h1><span id="show1" ><span></h1>
+                    <h1><span id="show2" ><span></h1>
+                    
+                    </div>
+                </table>
 
+            <script src="ja.js" charset="utf-8"></script>  
     </section>
 </div>
 
