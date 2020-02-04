@@ -1,5 +1,5 @@
 @font-face{
-    src: url(SanamDeklen_chaya/SanamDeklen_chaya.ttf);
+    src: url(/SanamDeklen_chaya/SanamDeklen_chaya.ttf);
     font-family: dee ;
 }
 body{
@@ -49,4 +49,15 @@ p{
     font-family: "dee";
     color: rgb(0, 0, 0); 
 }
+p1{
+    
+    font-family: "dee";
+    color: rgb(255, 255, 255); 
+}
+p2{
+    
+    font-family: "dee";
+    color: rgb(255, 255, 255); 
+}
+
 
