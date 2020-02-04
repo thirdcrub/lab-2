@@ -5,6 +5,7 @@ console.log(randomNumber1);
 
 
 
+
 function Mygame(a){
     let show;
     let num = document.getElementById("num").value;
@@ -46,10 +47,6 @@ function Mygame(a){
 
         }
     }
-    // else if(){
-
-    // }
-
     else{
         document.getElementById("num").disabled = true;
         document.getElementById("sub").disabled = true;
