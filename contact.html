@@ -223,54 +223,107 @@
 
 
     <!-- Main content -->
-    <section class="content">
-      <section class="content">
-      
-        <!-- Default box -->
-
-            <div class="col-md-12">
-                <!-- Widget: user widget style 1 -->
-                <div class="box box-widget widget-user">
-                  <!-- Add the bg color to the header using any of the bg-* classes -->
-                  <form action="#">
-                    <table width="80%" align="center">
-                       
-                        <tbody><tr>
-                            <td><h3><label>Subject : </label></h3></td>
-                            <td><input type="text" name="subject" value="" width="50px"> </td>
-                        </tr>
-                        <tr>
-                            <td><h3> <label>Massage : </label></h3></td>
-                            <td> <textarea name="msg"></textarea> </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Name : </label></h3></td>
-                            <td><input type="text" name="fullname" value=""> </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Gender : </label></h3></td>
-                            <td>
-                                <input type="radio" name="gender" value="male"> male 
-                                <input type="radio" name="gender" value="female"> female 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Phone : </label></h3></td>
-                            <td><input type="tel" name="phone" value=""> </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Email : </label></h3></td>
-                            <td><input type="email" value=""></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="submit" name="submit" value="submit"></td>
-                        </tr>
+            <section class="content">
+              <div class="container-fluid">
+        
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12">
+                      <div class="box box-info">
+                        <div class="box-header">
+                          <i class="fa fa-comment-o"></i>
             
+                          <h3 class="box-title">Contact</h3>
+                          <!-- tools box -->
+                          
+                          <!-- /. tools -->
+                        </div>
+                        <div class="box-body">
+                          <form action="" id="contact" class="c3" onkeydown="return event.key != 'Enter';">
+                            <div class="form-group"> 
+                              <span ><h7>Name</h7> &nbsp; :</span>
+                              <input type="text"  class="form" id="na" style="width: 150px; height: 35px; font-family: dee; font-size: 16px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                              <span class="e" id="fe">  </span>
+                              <span ><h7>Last Name</h7> &nbsp; :</span>
+                              <input type="text"  class="form" id="la" style="width: 150px; height: 35px; font-family: dee; font-size: 16px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                              <span class="e" id="las"></span>
+                            </div>
+                            <div class="form-group">
+                              <span><h7>Gender</h7> &nbsp; :</span> 
+                              <span class="gender" style="font-family: dee;">
+                                <input type="radio" name="gender" id="male" class="gender" value="1" checked > Male &nbsp;
+                                <input type="radio" name="gender" id="female" class="gender" value="2" > Female &nbsp; 
+                                <input type="radio" name="gender" id="other" class="gender" value="3" > Other &nbsp;</span>
+                              
+                            </div>
+                            <div class="form-group">
+                              <span><h7>Email</h7> &nbsp; :</span>
+                              <input type="email"  class="form" id="email"style="width: 350px; height: 35px; font-family: dee; font-size: 16px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                              <span class="e" id="ee"></span>
+        
+                            </div>
+                            
+                            <div>
+                              <span><h7>Detail</h7> &nbsp; :</span>
+                              <textarea id="detail" class="textarea" style="width: 100%; height: 150px; font-family: dee; font-size: 16px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                            </div>
+        
+                            
+        
+                            <button  type="reset" style="width: 90px; height: 35px; font-family: dee; font-size: 16px;"> Reset</button>
+                            <!-- <input class="btn btn-primary btn-flat" type="Reset" value="reset"> -->
+                            <button id="save" style="width: 90px; height: 35px; font-family: dee; font-size: 16px;"> <b>Save</b> </button> 
+                            
+        
+                            
+                          </form>
+                          <p class="e" id="se"></p>
+                          
+                      <div class="col-lg-12 col-xs-12">
+                        <div class="card text-white bg-dark mb-3">
+                            <div class="card-header">
+                                <h3 class="card-title"> User</h3>
+                            </div>
+                            <div class="card-body">
+                                <table class="table text-white">
+                                    <thead>
+                                        <tr>
+                                          <th><h7>Name</h7></th>
+                                          <th><h7>Gender</h7></th>
+                                          <th><h7>Email</h7></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-family: dee; font-size: 16px;">
+                                        
+                                    </tbody>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <h4></h4>
+                                  <div id="chartContainer" style="height: 370px; width: 100%; "></div>
+
+                            </div>
+                        </div>
+                        </div>
                         
-                    </tbody></table>
-                <h3 align="center">Chaiwat Satirawattana— <a href="mailto:name@yourdomain.com">chaiwat_satirwattana@cmu.ac.th</a> — 081 - 186 - 6777</h3>>     
-            </form>
+                        
+                      </div>
+                      
+        
+                    </div>
+        
+                     
+                    </div>
+        
+        
+                </div>
+        
+              </div>
+     
+      
  
   
       </section>
@@ -296,6 +349,17 @@ integrity="sha256-GqCMs8eqcNJo0k1Zw3TBSve9COCvjIX45PYKJlH0urU=" crossorigin="ano
 <!-- AdminLTE App -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/js/adminlte.min.js" 
 integrity="sha256-tCcp+FCxI8BTDa6VleHlINji0tuf+xrY76gX5Z/eqps=" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+ <!-- Graphs-->
+ <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+ <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+<script src="jacon.js"></script>
 
 </body>
 </html>
