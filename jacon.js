@@ -17,7 +17,8 @@ let db = firebase.firestore();
 
 console.log('Hi');
 
-$('#save').click(()=> {
+$('#save').click((f)=> {
+    f.preventDefault();
     e = false
     let name = document.getElementById("na").value;
     let last = document.getElementById("la").value;
@@ -114,6 +115,10 @@ $('#save').click(()=> {
 
 db.collection('users').orderBy("Name").onSnapshot(doc =>{
     let table = $('tbody')[0]
+    let male = 0;
+    let female=0;
+    let other=0;
+
     // document.querySelectorAll("tbody tr").forEach(item => item.remove())
     $("tbody tr").remove()
     // gpa = 0
@@ -137,6 +142,8 @@ db.collection('users').orderBy("Name").onSnapshot(doc =>{
         else if( item.data().Gender==3){
             secoundCell.textContent = item.data().Gender= "other";
             other++;
+
+ 
         }
         let string = String(item.data().Email)
         let something = ""
@@ -146,8 +153,8 @@ db.collection('users').orderBy("Name").onSnapshot(doc =>{
             }else something +='x'
         }
         thirdCell.textContent = something
-        sum = male+female+other;
-        console.log(sum);
+        sum= male+female+other;
+      
         let Graphs = {
             title: {
                 text: "Gender"
@@ -172,6 +179,7 @@ db.collection('users').orderBy("Name").onSnapshot(doc =>{
         };
         $("#chartContainer").CanvasJSChart(Graphs);
     })
-    
+    console.log(sum);
 })
+
 
